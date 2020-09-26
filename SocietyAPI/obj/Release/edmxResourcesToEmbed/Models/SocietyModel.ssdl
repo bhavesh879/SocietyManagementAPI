@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SocietyDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MembersDetails">
+    <Key>
+      <PropertyRef Name="memberId" />
+    </Key>
+    <Property Name="memberId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="memberName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="userName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="password" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="mobileNo" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+    <Property Name="memberType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="flatNo" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="50" />
+    <Property Name="societyId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="memberType" />
+    </Key>
+    <Property Name="memberType" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="memberTypeName" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="NumRange">
+    <Key>
+      <PropertyRef Name="numRangeCode" />
+    </Key>
+    <Property Name="numRangeCode" Type="char" MaxLength="2" Nullable="false" />
+    <Property Name="numRangeName" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="currentNumber" Type="int" Nullable="false" />
+    <Property Name="startNumber" Type="int" Nullable="false" />
+    <Property Name="endNumber" Type="int" Nullable="false" />
+    <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="SocietyDetails">
+    <Key>
+      <PropertyRef Name="societyId" />
+    </Key>
+    <Property Name="societyId" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="societyCode" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="societyName" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="secretory" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="address" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="isDeleted" Type="bit" />
+  </EntityType>
+  <Function Name="SP_GetSociety" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <EntityContainer Name="SocietyDBModelStoreContainer">
+    <EntitySet Name="MembersDetails" EntityType="Self.MembersDetails" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MemberType" EntityType="Self.MemberType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NumRange" EntityType="Self.NumRange" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="SocietyDetails" EntityType="Self.SocietyDetails" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

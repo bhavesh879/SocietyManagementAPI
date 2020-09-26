@@ -1,0 +1,93 @@
+D:\SocietyAPI\SocietyAPI\bin\SocietyAPI.dll.config
+D:\SocietyAPI\SocietyAPI\bin\SocietyAPI.dll
+D:\SocietyAPI\SocietyAPI\bin\SocietyAPI.pdb
+D:\SocietyAPI\SocietyAPI\bin\roslyn\csc.exe
+D:\SocietyAPI\SocietyAPI\bin\roslyn\csc.exe.config
+D:\SocietyAPI\SocietyAPI\bin\roslyn\csc.rsp
+D:\SocietyAPI\SocietyAPI\bin\roslyn\csi.exe
+D:\SocietyAPI\SocietyAPI\bin\roslyn\csi.rsp
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.AppContext.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\SocietyAPI\SocietyAPI\bin\roslyn\vbc.exe
+D:\SocietyAPI\SocietyAPI\bin\roslyn\vbc.exe.config
+D:\SocietyAPI\SocietyAPI\bin\roslyn\vbc.rsp
+D:\SocietyAPI\SocietyAPI\bin\roslyn\VBCSCompiler.exe
+D:\SocietyAPI\SocietyAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\SocietyAPI\SocietyAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\SocietyAPI\SocietyAPI\bin\Newtonsoft.Json.dll
+D:\SocietyAPI\SocietyAPI\bin\System.Net.Http.Formatting.dll
+D:\SocietyAPI\SocietyAPI\bin\System.Web.Http.dll
+D:\SocietyAPI\SocietyAPI\bin\System.Web.Http.WebHost.dll
+D:\SocietyAPI\SocietyAPI\bin\Newtonsoft.Json.xml
+D:\SocietyAPI\SocietyAPI\bin\System.Net.Http.Formatting.xml
+D:\SocietyAPI\SocietyAPI\bin\System.Web.Http.xml
+D:\SocietyAPI\SocietyAPI\bin\System.Web.Http.WebHost.xml
+D:\SocietyAPI\SocietyAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csprojAssemblyReference.cache
+D:\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csproj.CoreCompileInputs.cache
+D:\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csproj.CopyComplete
+D:\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.dll
+D:\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.pdb
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\SocietyAPI.dll.config
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\SocietyAPI.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\SocietyAPI.pdb
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\csc.exe
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\csc.exe.config
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\csc.rsp
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\csi.exe
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\csi.rsp
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.AppContext.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.Collections.Immutable.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.IO.FileSystem.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\System.Reflection.Metadata.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\vbc.exe
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\vbc.exe.config
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\vbc.rsp
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\VBCSCompiler.exe
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\roslyn\VBCSCompiler.exe.config
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\EntityFramework.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\Newtonsoft.Json.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Net.Http.Formatting.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.WebHost.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\EntityFramework.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\Newtonsoft.Json.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Net.Http.Formatting.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.WebHost.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Society App Documents\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csprojAssemblyReference.cache
+D:\Society App Documents\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csproj.CoreCompileInputs.cache
+D:\Society App Documents\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.csproj.CopyComplete
+D:\Society App Documents\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\obj\Debug\SocietyAPI.pdb
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Cors.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.Cors.dll
+D:\Society App Documents\SocietyAPI\SocietyAPI\bin\System.Web.Http.Cors.xml

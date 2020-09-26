@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SocietyDBModelStoreContainer" CdmEntityContainer="SocietyDBEntities">
+    <EntitySetMapping Name="MemberTypes">
+      <EntityTypeMapping TypeName="SocietyDBModel.MemberType">
+        <MappingFragment StoreEntitySet="MemberType">
+          <ScalarProperty Name="memberType1" ColumnName="memberType" />
+          <ScalarProperty Name="memberTypeName" ColumnName="memberTypeName" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NumRanges">
+      <EntityTypeMapping TypeName="SocietyDBModel.NumRange">
+        <MappingFragment StoreEntitySet="NumRange">
+          <ScalarProperty Name="numRangeCode" ColumnName="numRangeCode" />
+          <ScalarProperty Name="numRangeName" ColumnName="numRangeName" />
+          <ScalarProperty Name="currentNumber" ColumnName="currentNumber" />
+          <ScalarProperty Name="startNumber" ColumnName="startNumber" />
+          <ScalarProperty Name="endNumber" ColumnName="endNumber" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SocietyDetails">
+      <EntityTypeMapping TypeName="SocietyDBModel.SocietyDetail">
+        <MappingFragment StoreEntitySet="SocietyDetails">
+          <ScalarProperty Name="societyId" ColumnName="societyId" />
+          <ScalarProperty Name="societyCode" ColumnName="societyCode" />
+          <ScalarProperty Name="societyName" ColumnName="societyName" />
+          <ScalarProperty Name="secretory" ColumnName="secretory" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MembersDetails">
+      <EntityTypeMapping TypeName="SocietyDBModel.MembersDetail">
+        <MappingFragment StoreEntitySet="MembersDetails">
+          <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+          <ScalarProperty Name="societyId" ColumnName="societyId" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="flatNo" ColumnName="flatNo" />
+          <ScalarProperty Name="memberType" ColumnName="memberType" />
+          <ScalarProperty Name="mobileNo" ColumnName="mobileNo" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="userName" ColumnName="userName" />
+          <ScalarProperty Name="memberName" ColumnName="memberName" />
+          <ScalarProperty Name="memberId" ColumnName="memberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="SP_GetSociety" FunctionName="SocietyDBModel.Store.SP_GetSociety">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="SocietyDBModel.SP_GetSociety_Result">
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

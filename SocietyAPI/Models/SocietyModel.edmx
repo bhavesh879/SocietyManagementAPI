@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SocietyDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="MembersDetails">
+          <Key>
+            <PropertyRef Name="memberId" />
+          </Key>
+          <Property Name="memberId" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="memberName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="userName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="password" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="mobileNo" Type="numeric" Precision="10" Scale="0" Nullable="false" />
+          <Property Name="memberType" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="flatNo" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="50" />
+          <Property Name="societyId" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="isDeleted" Type="bit" />
+        </EntityType>
+        <EntityType Name="MemberType">
+          <Key>
+            <PropertyRef Name="memberType" />
+          </Key>
+          <Property Name="memberType" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="memberTypeName" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="isDeleted" Type="bit" />
+        </EntityType>
+        <EntityType Name="NumRange">
+          <Key>
+            <PropertyRef Name="numRangeCode" />
+          </Key>
+          <Property Name="numRangeCode" Type="char" MaxLength="2" Nullable="false" />
+          <Property Name="numRangeName" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="currentNumber" Type="int" Nullable="false" />
+          <Property Name="startNumber" Type="int" Nullable="false" />
+          <Property Name="endNumber" Type="int" Nullable="false" />
+          <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="isDeleted" Type="bit" />
+        </EntityType>
+        <EntityType Name="SocietyDetails">
+          <Key>
+            <PropertyRef Name="societyId" />
+          </Key>
+          <Property Name="societyId" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="societyCode" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="societyName" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="secretory" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="address" Type="varchar" MaxLength="100" Nullable="false" />
+          <Property Name="createdBy" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="isDeleted" Type="bit" />
+        </EntityType>
+        <Function Name="SP_GetSociety" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <EntityContainer Name="SocietyDBModelStoreContainer">
+          <EntitySet Name="MembersDetails" EntityType="Self.MembersDetails" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MemberType" EntityType="Self.MemberType" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="NumRange" EntityType="Self.NumRange" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="SocietyDetails" EntityType="Self.SocietyDetails" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SocietyDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="MemberType">
+          <Key>
+            <PropertyRef Name="memberType1" />
+          </Key>
+          <Property Name="memberType1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="memberTypeName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="NumRange">
+          <Key>
+            <PropertyRef Name="numRangeCode" />
+          </Key>
+          <Property Name="numRangeCode" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+          <Property Name="numRangeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="currentNumber" Type="Int32" Nullable="false" />
+          <Property Name="startNumber" Type="Int32" Nullable="false" />
+          <Property Name="endNumber" Type="Int32" Nullable="false" />
+          <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="SocietyDetail">
+          <Key>
+            <PropertyRef Name="societyId" />
+          </Key>
+          <Property Name="societyId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="societyCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="societyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="secretory" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" />
+        </EntityType>
+        <EntityContainer Name="SocietyDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="MemberTypes" EntityType="Self.MemberType" />
+          <EntitySet Name="NumRanges" EntityType="Self.NumRange" />
+          <EntitySet Name="SocietyDetails" EntityType="Self.SocietyDetail" />
+          <EntitySet Name="MembersDetails" EntityType="SocietyDBModel.MembersDetail" />
+          <FunctionImport Name="SP_GetSociety" ReturnType="Collection(SocietyDBModel.SP_GetSociety_Result)" />
+        </EntityContainer>
+        <EntityType Name="MembersDetail">
+          <Key>
+            <PropertyRef Name="memberId" />
+          </Key>
+          <Property Name="memberId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="memberName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="userName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="password" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="mobileNo" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+          <Property Name="memberType" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="flatNo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="societyId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="createdBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="isDeleted" Type="Boolean" />
+        </EntityType>
+        <ComplexType Name="SP_GetSociety_Result">
+          <Property Type="String" Name="Key" Nullable="false" MaxLength="10" />
+          <Property Type="String" Name="Value" Nullable="false" MaxLength="113" />
+        </ComplexType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SocietyDBModelStoreContainer" CdmEntityContainer="SocietyDBEntities">
+          <EntitySetMapping Name="MemberTypes">
+            <EntityTypeMapping TypeName="SocietyDBModel.MemberType">
+              <MappingFragment StoreEntitySet="MemberType">
+                <ScalarProperty Name="memberType1" ColumnName="memberType" />
+                <ScalarProperty Name="memberTypeName" ColumnName="memberTypeName" />
+                <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NumRanges">
+            <EntityTypeMapping TypeName="SocietyDBModel.NumRange">
+              <MappingFragment StoreEntitySet="NumRange">
+                <ScalarProperty Name="numRangeCode" ColumnName="numRangeCode" />
+                <ScalarProperty Name="numRangeName" ColumnName="numRangeName" />
+                <ScalarProperty Name="currentNumber" ColumnName="currentNumber" />
+                <ScalarProperty Name="startNumber" ColumnName="startNumber" />
+                <ScalarProperty Name="endNumber" ColumnName="endNumber" />
+                <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SocietyDetails">
+            <EntityTypeMapping TypeName="SocietyDBModel.SocietyDetail">
+              <MappingFragment StoreEntitySet="SocietyDetails">
+                <ScalarProperty Name="societyId" ColumnName="societyId" />
+                <ScalarProperty Name="societyCode" ColumnName="societyCode" />
+                <ScalarProperty Name="societyName" ColumnName="societyName" />
+                <ScalarProperty Name="secretory" ColumnName="secretory" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MembersDetails">
+            <EntityTypeMapping TypeName="SocietyDBModel.MembersDetail">
+              <MappingFragment StoreEntitySet="MembersDetails">
+                <ScalarProperty Name="isDeleted" ColumnName="isDeleted" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="createdBy" ColumnName="createdBy" />
+                <ScalarProperty Name="societyId" ColumnName="societyId" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="flatNo" ColumnName="flatNo" />
+                <ScalarProperty Name="memberType" ColumnName="memberType" />
+                <ScalarProperty Name="mobileNo" ColumnName="mobileNo" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="userName" ColumnName="userName" />
+                <ScalarProperty Name="memberName" ColumnName="memberName" />
+                <ScalarProperty Name="memberId" ColumnName="memberId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="SP_GetSociety" FunctionName="SocietyDBModel.Store.SP_GetSociety">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="SocietyDBModel.SP_GetSociety_Result">
+                <ScalarProperty Name="Key" ColumnName="Key" />
+                <ScalarProperty Name="Value" ColumnName="Value" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

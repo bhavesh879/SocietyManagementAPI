@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SocietyDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MemberType">
+    <Key>
+      <PropertyRef Name="memberType1" />
+    </Key>
+    <Property Name="memberType1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="memberTypeName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdDate" Type="DateTime" Precision="3" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="NumRange">
+    <Key>
+      <PropertyRef Name="numRangeCode" />
+    </Key>
+    <Property Name="numRangeCode" Type="String" MaxLength="2" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="numRangeName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="currentNumber" Type="Int32" Nullable="false" />
+    <Property Name="startNumber" Type="Int32" Nullable="false" />
+    <Property Name="endNumber" Type="Int32" Nullable="false" />
+    <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdDate" Type="DateTime" Precision="3" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="SocietyDetail">
+    <Key>
+      <PropertyRef Name="societyId" />
+    </Key>
+    <Property Name="societyId" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="societyCode" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="societyName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="secretory" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdBy" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="createdDate" Type="DateTime" Precision="3" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="SocietyDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MemberTypes" EntityType="Self.MemberType" />
+    <EntitySet Name="NumRanges" EntityType="Self.NumRange" />
+    <EntitySet Name="SocietyDetails" EntityType="Self.SocietyDetail" />
+    <EntitySet Name="MembersDetails" EntityType="SocietyDBModel.MembersDetail" />
+    <FunctionImport Name="SP_GetSociety" ReturnType="Collection(SocietyDBModel.SP_GetSociety_Result)" />
+  </EntityContainer>
+  <EntityType Name="MembersDetail">
+    <Key>
+      <PropertyRef Name="memberId" />
+    </Key>
+    <Property Name="memberId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="memberName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="userName" Type="String" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="password" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="mobileNo" Type="Decimal" Nullable="false" Precision="10" Scale="0" />
+    <Property Name="memberType" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="flatNo" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="societyId" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="createdBy" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="createdDate" Type="DateTime" Precision="3" />
+    <Property Name="isDeleted" Type="Boolean" />
+  </EntityType>
+  <ComplexType Name="SP_GetSociety_Result">
+    <Property Type="String" Name="Key" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="Value" Nullable="false" MaxLength="113" />
+  </ComplexType>
+</Schema>
